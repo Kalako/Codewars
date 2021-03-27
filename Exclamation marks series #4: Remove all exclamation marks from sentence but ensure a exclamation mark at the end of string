@@ -1,0 +1,13 @@
+public class Kata
+{
+  public static string Remove(string s)
+  {
+    var charsToRemove = new string[] { "!" };
+    foreach (var c in charsToRemove)
+    {
+      s = s.Replace(c, string.Empty);
+      s = s + "!";
+    }
+    return s;
+  }
+}
